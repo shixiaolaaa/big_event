@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/lib/bootstrap.css">
+    <!-- 引入自己样式 -->
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+
+    <title>BE登录注册</title>
+</head>
+
+<body>
+    <!-- 布局容器 -->
+    <div class="layui-container">
+        <!-- log -->
+        <img src="./assets/images/logo.png" alt="">
+        <!-- 登录选项卡 -->
+        <div class="form form1">
+            <form class="layui-form login_form" action="">
+                <!-- 标题 -->
+                <img src="./assets/images/login_title.png" alt="" class="login_title">
+                <!-- 登录信息收集部分 -->
+                <section class="login_message">
+                    <!-- 账号 -->
+                    <div>
+                        <div class="layui-input-block">
+                            <i class="layui-icon layui-icon-username"></i>
+                            <input type="text" name="title" required lay-verify="required|username" placeholder="请输入用户名" autocomplete="off" class="layui-input zhang">
+                        </div>
+                    </div>
+                    <!-- 密码 -->
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <i class="layui-icon layui-icon-password"></i>
+                            <input type="password" name="title" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input mi">
+                        </div>
+                    </div>
+                    <!-- 提交按钮 -->
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn layui-btn-normal bnt login_bnt" lay-submit lay-filter="formDemo">登录</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- 点击切换注册账号 -->
+                <a href="javascript:;" class="Register_account bnt1">去注册账号</a>
+            </form>
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------------- -->
+        <!--注册选项卡  -->
+        <div class="form Register">
+            <form class="layui-form Register_form" action="">
+                <!-- 标题 -->
+                <img src="./assets/images/login_title.png" alt="" class="login_title">
+                <!-- 登录信息收集部分 -->
+                <section class="login_message">
+                    <!-- 创建账号 -->
+                    <div>
+                        <div class="layui-input-block">
+                            <i class="layui-icon layui-icon-username"></i>
+                            <input type="text" name="title" required lay-verify="required|username" placeholder="请输入用户名" autocomplete="off" class="layui-input zhang da">
+                        </div>
+                    </div>
+                    <!-- 创建密码 -->
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <i class="layui-icon layui-icon-password"></i>
+                            <input type="password" name="title" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input crpwd" lay-verify="">
+                        </div>
+                    </div>
+                    <!-- 确认密码 -->
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <i class="layui-icon layui-icon-password"></i>
+                            <input type="password" name="title" required lay-verify="required|repwd|pwd" placeholder="请确认输入密码" autocomplete="off" class="layui-input rcrpwd">
+                        </div>
+                    </div>
+                    <!-- 提交按钮 -->
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn layui-btn-normal bnt register_bnt" lay-submit lay-filter="formDemo">注册</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- 点击切换注册账号 -->
+                <a href="javascript:;" class="Register_account bnt2">去登录</a>
+            </form>
+        </div>
+        <script src="./assets/lib/jquery.js"></script>
+        <script src="./assets/lib/layui/layui.all.js"></script>
+        <!-- 引入自己的js -->
+        <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

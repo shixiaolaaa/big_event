@@ -1,0 +1,69 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: url('/assets/images/login_bg.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.layui-container {
+    height: 100%;
+}
+
+.layui-input-block {
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+}
+
+.login_title {
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login_message {
+    padding-top: 65px;
+}
+
+.form {
+    padding: 0 30px;
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bnt {
+    width: 100%;
+}
+
+.Register_account {
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+/* 后面用js实现 */
+
+.Register {
+    display: none
+}
+
+.layui-icon {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.layui-input {
+    padding-left: 25px !important;
+}
