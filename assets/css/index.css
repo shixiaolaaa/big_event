@@ -1,0 +1,68 @@
+/* 导航栏右侧 */
+
+.layui-layout-right {
+    height: 100%;
+    padding-top: 15px;
+}
+
+.layui-layout-right li {
+    float: left;
+    padding-right: 20px;
+    color: #fff;
+    height: 30px;
+}
+
+.layui-layout-right li div {
+    height: 100%;
+    line-height: 30px;
+    cursor: pointer;
+    /* 禁止选中 */
+    user-select: none;
+}
+
+
+/* 文本图像 */
+
+.layui-layout-right {
+    position: relative;
+}
+
+.layui-nav-img {
+    vertical-align: middle
+}
+
+.textimg {
+    height: 30px !important;
+    width: 30px;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+    top: 15px;
+}
+
+
+/* 左侧导航栏 */
+
+.personalInformation {
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid black;
+    padding-left: 40px;
+}
+
+.home {
+    height: 45px;
+    text-align: left;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
