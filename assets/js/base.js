@@ -6,5 +6,12 @@ $.ajaxPrefilter(function(options) {
         options.headers = {
             Authorization: localStorage.getItem('token')
         }
+    };
+    // 页面权限控制
+    options.complete = function(res) {
+        if (res.responseJSON.status === 1) {
+            localStorage.clear();
+            location.href = "/login.html"
+        };
     }
 })

@@ -23,22 +23,25 @@ function getUserMsg() {
                     location.href = '/login.html';
                 });
                 //获取图像
+                console.log(mes.user_pic)
                 if (mes.user_pic) {
+                    $('.textimg').hide();
+                    $('.layui-nav-img').prop('src', mes.user_pic)
                     $('.layui-nav-img').show();
-                    $('textimg').hide();
-                };
-                $('.textimg').html(mes.username.substr(0, 1));
-                $('.textimg').show();
+                } else {
+                    $('.textimg').html(mes.username.substr(0, 1));
+                    $('.textimg').show();
+                }
             }
         },
         //不管成功失败，服务器都会回调一个complete函数
-        complete: function(res) {
-            console.log(res);
-            if (res.responseJSON.status === 1) {
-                localStorage.clear();
-                location.href = "/login.html"
-            }
-        }
+        // complete: function(res) {
+        //     console.log(res);
+        //     if (res.responseJSON.status === 1) {
+        //         localStorage.clear();
+        //         location.href = "/login.html"
+        //     }
+        // }
 
     })
 };

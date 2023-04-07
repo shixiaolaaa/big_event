@@ -42,7 +42,9 @@
                         <img src="./assets/images/sample.jpg" class="layui-nav-img"> 欢迎
                         <span class="nick"></span>
                     </li>
-                    <li class="layui-nav-item layui-btn layui-border-blue home layui-nav-itemed">首页</li>
+                    <a href="/home/dashboard.html" target="fm">
+                        <li class="layui-nav-item layui-btn layui-border-blue home layui-nav-itemed main">首页</li>
+                    </a>
                     <li class="layui-nav-item">
                         <a href="javascript:;">文章管理</a>
                         <dl class="layui-nav-child">
@@ -54,9 +56,9 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;">个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">基本资料</a></dd>
-                            <dd><a href="javascript:;">更换图像</a></dd>
-                            <dd><a href="">重置密码</a></dd>
+                            <dd><a href="home/baseData.html" target="fm">基本资料</a></dd>
+                            <dd><a href="/home/rePng.html" target="fm">更换图像</a></dd>
+                            <dd><a href="/home/resetpwd.html" target="fm">重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -105,7 +107,6 @@
         });
     </script>
     <script src="./assets/lib/jquery.js"></script>
-    <script src="./assets/lib/layui/layui.all.js"></script>
     <!-- 引入基础js -->
     <script src="/assets/js/base.js"></script>
     <!-- 引入自己样式 -->
