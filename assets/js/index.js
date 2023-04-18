@@ -5,7 +5,7 @@ function getUserMsg() {
         type: "get",
         url: '/my/userinfo',
         success: function(res) {
-            if (status !== 0) {
+            if (res.status == 0) {
                 let mes = res.data;
                 //获取用户名称
                 console.log(mes.nickname)

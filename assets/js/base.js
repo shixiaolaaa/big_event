@@ -9,7 +9,7 @@ $.ajaxPrefilter(function(options) {
     };
     // 页面权限控制
     options.complete = function(res) {
-        if (res.responseJSON.status === 1) {
+        if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             localStorage.clear();
             location.href = "/login.html"
         };
